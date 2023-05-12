@@ -1,12 +1,12 @@
 
-import { AppBar, Box, Card, CardContent, Container, Grid, Button, Toolbar, Typography } from "@mui/material"
+import { AppBar, Box, Card, CardContent, Container, Grid, Paper, Toolbar, Typography } from "@mui/material"
 
 
 export const Header = () => {
 
     const debug = () => {
         console.log("debug")
-    } 
+    }
 
 
 
@@ -34,15 +34,15 @@ export const Header = () => {
                         <Box sx={{ flexGrow: 1 }} />
                         <Grid container spacing={2} alignItems="center" justifyContent="flex-end">
                             <Grid item xs={12} sm={6} md={3}>
-
-                                <Card sx={{ width: '100%', height: '100%' }}>
-                                    <CardContent>
-                                        <Typography variant="h5" component="h2">
-                                            Card 1
-                                        </Typography>
-                                    </CardContent>
-                                </Card>
-
+                                <Paper onClick={() => debug()}>
+                                    <Card sx={{ width: '100%', height: '100%' }}>
+                                        <CardContent>
+                                            <Typography variant="h5" component="h2">
+                                                Card 1
+                                            </Typography>
+                                        </CardContent>
+                                    </Card>
+                                </Paper>
                             </Grid>
                             <Grid item xs={12} sm={6} md={3}>
 
