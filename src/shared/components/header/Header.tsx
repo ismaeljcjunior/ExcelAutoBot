@@ -1,15 +1,10 @@
-
 import { AppBar, Box, Card, CardContent, Container, Grid, Paper, Toolbar, Typography } from "@mui/material"
-
 
 export const Header = () => {
 
     const debug = () => {
         console.log("debug")
     }
-
-
-
     return (
         <>
             <AppBar position="static" >
